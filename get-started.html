@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+
+        header .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        header nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .intro {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
+        }
+
+        .intro h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .intro p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .intro .btn-scroll {
+            display: inline-block;
+            padding: 15px 30px;
+            background: white;
+            color: #ff7e5f;
+            font-weight: bold;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .intro .btn-scroll:hover {
+            transform: scale(1.1);
+        }
+
+        .steps, .benefits {
+            padding: 50px 20px;
+            text-align: center;
+            background: white;
+        }
+
+        .steps h2, .benefits h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .step-cards, .benefit-items {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .step, .benefit {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            transition: transform 0.3s ease, background 0.3s;
+        }
+
+        .step i, .benefit i {
+            font-size: 2em;
+            color: #ff7e5f;
+            margin-bottom: 10px;
+        }
+
+        .step:hover, .benefit:hover {
+            transform: translateY(-10px);
+            background: #ff7e5f;
+            color: white;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Yumi</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#steps">Steps</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h1>Welcome to Your Journey</h1>
+        <p>Start your path to success with us. Follow the steps below and achieve your goals with ease.</p>
+        <a href="/index.html" class="btn-scroll">Get Started</a>
+    </section>
+
+    <section id="steps" class="steps">
+        <h2>How to Get Started</h2>
+        <div class="step-cards">
+            <div class="step">
+                <i class="fas fa-user-plus"></i>
+                <h3>1. Sign Up</h3>
+                <p>Create your account and gain access to exclusive features tailored to your needs.</p>
+            </div>
+            <div class="step">
+                <i class="fas fa-tasks"></i>
+                <h3>2. Complete Your Profile</h3>
+                <p>Fill out your information to personalize your experience and maximize results.</p>
+            </div>
+            <div class="step">
+                <i class="fas fa-rocket"></i>
+                <h3>3. Start Exploring</h3>
+                <p>Navigate through our platform and discover tools to achieve your goals.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="benefits">
+        <h2>Why Choose Us</h2>
+        <div class="benefit-items">
+            <div class="benefit">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Security</h3>
+                <p>Your data is safe with us, thanks to our advanced security protocols.</p>
+            </div>
+            <div class="benefit">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Innovation</h3>
+                <p>Experience cutting-edge solutions that keep you ahead of the curve.</p>
+            </div>
+            <div class="benefit">
+                <i class="fas fa-users"></i>
+                <h3>Community</h3>
+                <p>Join a growing network of professionals and enthusiasts.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Yumi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
