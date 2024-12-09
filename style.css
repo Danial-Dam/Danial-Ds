@@ -1,0 +1,479 @@
+/* 1. Жалпы стильдер */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #f0f0f0; 
+}
+
+/* 2. Хедер */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #333; 
+    color: #fff; 
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; 
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #feb47b; 
+}
+
+/* 3. Герой секциясы */
+.btn {
+    padding: 15px 30px;
+    background: black; /* Градиент фона */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #feb47b, #ff7e5f); /* Инверсия градиента */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Усиление тени */
+    transform: translateY(-5px); /* Легкий подъём */
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); 
+    color: #fff; 
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 100%;
+    flex: 1 1 50%;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+}
+
+.hero-text button {
+    padding: 15px 30px;
+    background: black;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.hero-text button:hover {
+    background: linear-gradient(90deg, #feb47b, #ff7e5f);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hero-image {
+    flex: 1 1 40%;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 4. Features секциясы */
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+    background: ; 
+}
+
+.feature {
+    text-align: center;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.feature i {
+    font-size: 2.5em;
+    color: #ff7e5f; 
+    margin-bottom: 10px;
+}
+
+/* 5. Main Benefit секциясы */
+.main-benefit {
+    padding: 50px 20px;
+    background: #feb47b;
+    text-align: left;
+}
+
+.benefit-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.benefit-text {
+    flex: 1;
+    text-align: left;
+    max-width: 50%;
+}
+
+.benefit-image {
+    flex: 1;
+    text-align: center;
+    max-width: 50%;
+}
+
+.benefit-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 6. Testimonials секциясы */
+#testimonials {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.testimonial-slider {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial .quote {
+    font-size: 18px;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.author-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.author-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #777;
+}
+
+/* 7. Subscribe секциясы */
+#subscribe {
+    padding: 50px 20px;
+    text-align: center;
+    background: #feb47b;
+}
+
+#subscribe form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#subscribe form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1 1 40%;
+    max-width: 300px;
+}
+
+#subscribe form button {
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#subscribe form button:hover {
+    background: #ff7e5f;
+}
+
+/* 8. Download секциясы */
+#download {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.download-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.download-buttons button {
+    padding: 10px 20px;
+    margin: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.download-buttons button i {
+    margin-right: 10px;
+}
+
+/* 9. Footer */
+footer {
+    width: 100vw;
+    background: #333;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer nav ul li {
+    display: inline;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+footer nav ul li a:hover {
+    color: #ff7e5f;
+}
+
+/* 10. Адаптивтілік */
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .article, .buttons {
+        flex: 1 1 45%; /* Икемді баған ені */
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .article, .buttons {
+        width: 100%; /* Бағандар толық енімен */
+        margin-bottom: 20px;
+    }
+    .header {
+        font-size: 20px;
+    }
+    .button-group {
+        flex-direction: column; /* Түймелерді тігінен орналастыру */
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 18px;
+    }
+    .image-container h2 {
+        font-size: 18px;
+    }
+    .highlighted-text-1, .highlighted-text-2 {
+        font-size: 14px;
+    }
+    .button-group a, .large-button {
+        font-size: 14px;
+        padding: 8px 16px; /* Мәтінге сай ықшамдау */
+    }
+}
+        @media (max-width: 540px) {
+    .container {
+        flex-direction: column;
+        gap: 10px; /* Аралықты кішірейту */
+    }
+    img {
+        max-width: 100%; /* Суреттің артық үлкеюін болдырмау */
+        height: auto; /* Пропорцияны сақтау */
+    }
+}
+
+/* 11. Анимация */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#download, .features, .main-benefit, #testimonials, #subscribe {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+button:hover {
+    background: #444;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.feature i {
+    transition: transform 0.3s ease;
+}
+
+.feature:hover i {
+    transform: rotate(360deg);
+}
+
+
+.btn {
+    padding: 15px 30px;
+    background: black; /* Градиент фона */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #feb47b, #ff7e5f); /* Инверсия градиента */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Усиление тени */
+    transform: translateY(-5px); /* Легкий подъём */
+}
+
+/* Стили для страницы подтверждения */
+.confirmation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+}
+
+.confirmation-message {
+    text-align: center;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.confirmation-message h1 {
+    font-size: 2.5em;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.confirmation-message p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.confirmation-message .btn {
+    padding: 12px 25px;
+    background: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.confirmation-message .btn:hover {
+    background: #218838;
+}
+
+/* Анимация */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
