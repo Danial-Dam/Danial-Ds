@@ -1,4 +1,4 @@
-/* 1. Жалпы стильдер */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,7 +8,7 @@ body {
     background-color: #f0f0f0; 
 }
 
-/* 2. Хедер */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -45,25 +45,25 @@ nav ul li a:hover {
     color: #feb47b; 
 }
 
-/* 3. Герой секциясы */
+
 .btn {
     padding: 15px 30px;
-    background: black; /* Градиент фона */
+    background: black; /
     color: #fff;
     text-decoration: none;
     border-radius: 50px;
     font-weight: bold;
     display: inline-block;
     font-size: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     transition: all 0.3s ease;
     text-align: center;
 }
 
 .btn:hover {
-    background: linear-gradient(90deg, #feb47b, #ff7e5f); /* Инверсия градиента */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Усиление тени */
-    transform: translateY(-5px); /* Легкий подъём */
+    background: linear-gradient(90deg, #feb47b, #ff7e5f); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+    transform: translateY(-5px); 
 }
 .hero {
     display: flex;
@@ -120,7 +120,7 @@ nav ul li a:hover {
     height: auto;
 }
 
-/* 4. Features секциясы */
+
 .features {
     display: flex;
     justify-content: space-between;
@@ -141,7 +141,7 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-/* 5. Main Benefit секциясы */
+
 .main-benefit {
     padding: 50px 20px;
     background: #feb47b;
@@ -173,7 +173,7 @@ nav ul li a:hover {
     height: auto;
 }
 
-/* 6. Testimonials секциясы */
+
 #testimonials {
     padding: 50px 20px;
     text-align: center;
@@ -221,7 +221,7 @@ nav ul li a:hover {
     color: #777;
 }
 
-/* 7. Subscribe секциясы */
+
 #subscribe {
     padding: 50px 20px;
     text-align: center;
@@ -256,7 +256,7 @@ nav ul li a:hover {
     background: #ff7e5f;
 }
 
-/* 8. Download секциясы */
+
 #download {
     padding: 50px 20px;
     text-align: center;
@@ -282,7 +282,7 @@ nav ul li a:hover {
     margin-right: 10px;
 }
 
-/* 9. Footer */
+
 footer {
     width: 100vw;
     background: #333;
@@ -317,14 +317,14 @@ footer nav ul li a:hover {
     color: #ff7e5f;
 }
 
-/* 10. Адаптивтілік */
+
 @media (max-width: 1200px) {
     .container {
         flex-direction: row;
         justify-content: space-around;
     }
     .article, .buttons {
-        flex: 1 1 45%; /* Икемді баған ені */
+        flex: 1 1 45%; 
     }
 }
 
@@ -334,14 +334,14 @@ footer nav ul li a:hover {
         align-items: center;
     }
     .article, .buttons {
-        width: 100%; /* Бағандар толық енімен */
+        width: 100%; 
         margin-bottom: 20px;
     }
     .header {
         font-size: 20px;
     }
     .button-group {
-        flex-direction: column; /* Түймелерді тігінен орналастыру */
+        flex-direction: column; 
         align-items: center;
     }
 }
@@ -358,21 +358,21 @@ footer nav ul li a:hover {
     }
     .button-group a, .large-button {
         font-size: 14px;
-        padding: 8px 16px; /* Мәтінге сай ықшамдау */
+        padding: 8px 16px; 
     }
 }
         @media (max-width: 540px) {
     .container {
         flex-direction: column;
-        gap: 10px; /* Аралықты кішірейту */
+        gap: 10px; 
     }
     img {
-        max-width: 100%; /* Суреттің артық үлкеюін болдырмау */
-        height: auto; /* Пропорцияны сақтау */
+        max-width: 100%; 
+        height: auto; 
     }
 }
 
-/* 11. Анимация */
+
 @keyframes fadeInUp {
     0% {
         opacity: 0;
@@ -405,25 +405,25 @@ button:hover {
 
 .btn {
     padding: 15px 30px;
-    background: black; /* Градиент фона */
+    background: black;
     color: #fff;
     text-decoration: none;
     border-radius: 50px;
     font-weight: bold;
     display: inline-block;
     font-size: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     transition: all 0.3s ease;
     text-align: center;
 }
 
 .btn:hover {
-    background: linear-gradient(90deg, #feb47b, #ff7e5f); /* Инверсия градиента */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Усиление тени */
-    transform: translateY(-5px); /* Легкий подъём */
+    background: linear-gradient(90deg, #feb47b, #ff7e5f); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+    transform: translateY(-5px); 
 }
 
-/* Стили для страницы подтверждения */
+
 .confirmation {
     display: flex;
     justify-content: center;
@@ -466,7 +466,7 @@ button:hover {
     background: #218838;
 }
 
-/* Анимация */
+
 @keyframes fadeInUp {
     0% {
         opacity: 0;
